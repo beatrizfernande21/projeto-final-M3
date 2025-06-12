@@ -1,12 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loja de brinquedos</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>Entrega de Brinquedos</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <header>
+    <h1>Verificação de Entrega de Brinquedos</h1>
+    <div class="banner">
+      <img src="img/briquedo 1.jpeg" alt="Brinquedo 1">
+      <img src="img/brinquedo 2.jpeg" alt="Brinquedo 2">
+    </div>
+  </header>
+  <main>
+    <label for="cep">Digite seu CEP:</label>
+    <input type="text" id="cep" placeholder="Ex: 12345-678">
+    <button onclick="verificarCEP()">Verificar</button>
+
+    <div id="resultado"></div>
+
+    <section class="galeria">
+      <h2>Brinquedos em destaque</h2>
+      <img src="img/brinquedo 3.jpeg" alt="Brinquedo 3">
+      <img src="img/brinquedo 4.jpg" alt="Brinquedo 4">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
