@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    color: #1a4b3c;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #80f5dc;
 }
 header {
-    background-color: #fff;
+    background-color: #80f5dc;
     padding: 20px;
 }
 .banner img {
@@ -19,7 +20,11 @@ main {
 input, button {
     padding: 10px;
     margin: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+   background-color: #14d0a7;
+  
 }
 #resultado {
     margin-top: 20px;
