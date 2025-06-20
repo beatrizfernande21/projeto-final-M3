@@ -1,6 +1,6 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #1a4b3c;
+    color: #094735;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -17,18 +17,19 @@ header {
 main {
     padding: 20px;
 }
-input, button {
+input, button  {
     padding: 10px;
     margin: 10px;
     font-size: 20px;
     color: white;
     border-radius: 5px;
-   background-color: #14d0a7;
+   background-color: #22ac8e;
   
 }
 #resultado {
     margin-top: 20px;
     font-weight: bold;
+    
 }
 .galeria {
     margin-top: 40px;
