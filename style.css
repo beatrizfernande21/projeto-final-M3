@@ -1,40 +1,123 @@
+/* Estilo principal da página */
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #094735;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #80f5dc;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #094735;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #76e6cd;
 }
+
+/* Cabeçalho */
 header {
-    background-color: #80f5dc;
-    padding: 20px;
+  background-color: #76e6cd;
+  padding: 20px;
 }
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #055b42;
+}
+
+/* Banner com imagens do topo */
+.banner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
+}
+
 .banner img {
-    width: 120px;
-    margin: 10px;
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.banner img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Conteúdo principal */
 main {
-    padding: 20px;
+  padding: 30px 20px;
 }
-input, button  {
-    padding: 10px;
-    margin: 10px;
-    font-size: 20px;
-    color: white;
-    border-radius: 5px;
-   background-color: #22ac8e;
-  
+
+input, button {
+  padding: 12px;
+  margin: 10px 5px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
+
+input {
+  width: 200px;
+  color: #094735;
+  background-color: #e0fdf7;
+  border: 1px solid #22ac8e;
+}
+
+button {
+  background-color: #22ac8e;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d977c;
+  transform: scale(1.03);
+}
+
+/* Resultado da verificação do CEP */
 #resultado {
-    margin-top: 20px;
-    font-weight: bold;
-    
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #0a3d30;
 }
+
+/* Galeria de brinquedos */
 .galeria {
-    margin-top: 40px;
+  margin-top: 50px;
 }
+
+.galeria h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #055b42;
+}
+
 .galeria img {
-    width: 150px;
-    margin: 10px;
+  width: 150px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .galeria img {
+    width: 100px;
+  }
 }
