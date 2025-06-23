@@ -1,10 +1,18 @@
 function verificarCEP() {
   let cep = document.getElementById("cep").value.replace(/\D/g, ""); // remove tudo que não for número
+let inputCep = document.getElementById("cep");
 
   if (!/^\d{8}$/.test(cep)) {
     document.getElementById("resultado").innerText = "CEP inválido. Digite 8 números.";
     return;
+     inputCep.classList.add("erro");
+    return;
+  } else {
+    inputCep.classList.remove("erro");
   }
+  
+// ⏳ Mostra mensagem de carregamento antes da API responder
+  document.getElementById("resultado").innerHTML = "🔄 Buscando informações do CEP...";
 
   fetch(`https://viacep.com.br/ws/${cep}/json/`)
     .then(response => response.json())
