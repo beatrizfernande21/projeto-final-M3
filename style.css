@@ -121,3 +121,7 @@ button:hover {
     width: 100px;
   }
 }
+input.erro {
+  border: 2px solid red;
+  background-color: #ffdcdc;
+}

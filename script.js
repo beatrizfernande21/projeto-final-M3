@@ -26,3 +26,11 @@ function verificarCEP() {
       document.getElementById("resultado").innerText = "Erro ao buscar o CEP.";
     });
 }
+function limparDados() {
+  const inputCep = document.getElementById("cep");
+  const resultado = document.getElementById("resultado");
+
+  inputCep.value = "";
+  inputCep.classList.remove("erro");
+  resultado.innerHTML = "";
+}
